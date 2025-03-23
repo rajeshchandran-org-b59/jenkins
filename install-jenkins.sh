@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Please use the below script for installing jenkins LTS
+# I am using "curl" to download the jenkins.repo file. The "wget" method may not work in some cases.
 
 sudo curl -L -o /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
 sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
